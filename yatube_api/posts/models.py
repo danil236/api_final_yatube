@@ -59,3 +59,4 @@ class Follow(models.Model):
                 check=~models.Q(user=models.F('following')),
             ),
         ]
+        
