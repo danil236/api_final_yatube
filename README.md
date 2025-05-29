@@ -71,21 +71,3 @@ Response:
 ### Get current user's follows:
 
 Request address - http://127.0.0.1:8000/api/v1/follow/.
-
-Response:
-```
-[
-  {
-    "user": "string",
-    "following": "string1"
-  },
-  {
-    "user": "string",
-    "following": "string2"
-  },
-  {
-    "user": "string",
-    "following": "string3"
-  }
-]
-```
