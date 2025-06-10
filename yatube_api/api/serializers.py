@@ -41,7 +41,7 @@ class FollowSerializer(serializers.ModelSerializer):
         queryset=User.objects.all()
     )
 
-    class Meta:
+    class Meta: # Класс мета
         model = Follow
         fields = ('user', 'following')
         validators = [
