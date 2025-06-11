@@ -54,8 +54,4 @@ class Follow(models.Model):
                 fields=['user', 'following'],
                 name='%(app_label)s_%(class)s_unique_relationships',
             ),
-            CheckConstraint(
-                name='%(app_label)s_%(class)s_prevent_self_follow',
-                check=~models.Q(user=models.F('following')),
-            ),
         ]
