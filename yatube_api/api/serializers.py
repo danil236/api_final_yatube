@@ -30,7 +30,7 @@ class GroupSerializer(serializers.ModelSerializer):
         fields = ('id', 'title', 'slug', 'description')
 
 
-class FollowSerializer(serializers.ModelSerializer):
+class FollowSerializer(serializers.ModelSerializer):#norm
     user = SlugRelatedField(
         slug_field='username',
         read_only=True,
